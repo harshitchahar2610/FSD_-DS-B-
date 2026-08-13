@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 153;
+let temp = n;
+let sum = 0;
+let digits = n.toString().length;
+for (let i = 0; i < digits; i++) {
+    let digit = temp % 10;
+    sum += digit ** digits;
+    temp = Math.floor(temp / 10);
+}
+if (sum === n) {
+    console.log("Armstrong Number");
+} else {
+    console.log("Not Armstrong Number");
+}
+    </script>
+</body>
+</html>
